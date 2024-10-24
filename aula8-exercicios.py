@@ -61,10 +61,22 @@ else:
 
 # Determine se um número é múltiplo de 5 e 7.
 
+multiplo = int(input('Digite um numero')
+if multiplo / multiplo == 0:
+    print('é um ')
+
 # 6*
 
 # Verifique se um número é positivo e maior que 10
 
+positivo = int(input('digite um numero positivo: ')
+if positivo > 10:
+    print('é maior')
+else:
+    print('é menor')
+
 # 7*
 
 # Verifique se um número é divisível por 3 ou 5.
+
+divi
