@@ -1,57 +1,49 @@
-# EXERCÍCIOS: 
-
 # 1* 
 # Peça para o usuário digitar um número, verifique se um número é positivo, 
 # negativo ou zero.
 
-num = int(input('Digite um numero ->'))
-
+num = int(input('digite um numero -> '))
 if num > 0:
-    print('O numero digitado é positivo!')
+    print('o numero é positivo')
 else:
     print('o numero é negativo')
-
-
 
 # 2*
 
 # Peça para o usuário digitar a idade, verifique se uma pessoa pode votar com 
 # base na idade.
 
-idade = int(input('digite sua idade: '))
-
+idade = int(input('Digite sua idade: '))
 if idade >= 16:
-    print('Voce ja pode votar')
+    print('pode votar')
 else:
-    print('voce ainda não pode votar')
+    print('não pode votar')
+
 # 3*
 
 # Declara uma variável com um número qualquer, determine se um número é par ou ímpar.
 
-var = 10
+parimpar = int(input('Digite um número par ou ímpar: '))
 
-if var * 2:
-    print('O número é par')
+if parimpar % 2 == 0:
+    print('o número é par')
 else:
-    print('O numero é impar')
-
+    print('o número é impar')
 # 4*
 
 # Usuário vai digitar 3  números, para criar um triângulo, verifique se um triângulo 
 # é equilátero, isósceles ou escaleno
 
-lado1 = int(input('Defina 1 lado de um quadrado: '))
-lado2 = int(input('Defina 1 lado de um quadrado: '))
-lado3 = int(input('Defina 1 lado de um quadrado: '))
+l1 = int(input('digite um lado: '))
+l2 = int(input('digite um lado: '))
+l3 = int(input('digite um lado: '))
 
-if lado1 == lado2 == lado3:
-    print('Voce criou um quadrado equilátero')
-elif lado1 == lado2 or lado2 == lado3 or lado3 == lado1:
-    print('Seu quadrado é isóceles')
+if l1 == l2 == l3:
+    print('equilatero')
+elif l1 == l2 and l2 != l3 or l1 == l3 and l2!= l3:
+    print('isoceles')
 else:
-    print('dru quadrado é escalenpo (possui medidas diferentes)')
-
-
+    print('escaleno')
 
 # Um triângulo é chamado de equilátero se todos os lados possuem a mesma medida. 
 # Um triângulo é chamado de isósceles se dois lados possuem a mesma medida. 
@@ -61,22 +53,33 @@ else:
 
 # Determine se um número é múltiplo de 5 e 7.
 
-multiplo = int(input('Digite um numero')
-if multiplo / multiplo == 0:
-    print('é um ')
+numero = int(input('digite um numero'))
+
+if numero % 5 == 0 or numero % 7 == 0:
+    print('é multiplo')
+else: 
+    print('Não é')  
+
+
 
 # 6*
 
 # Verifique se um número é positivo e maior que 10
 
-positivo = int(input('digite um numero positivo: ')
-if positivo > 10:
-    print('é maior')
+numb = int(input('digite um numero: '))
+
+if numb > 0 and numb > 10:
+    print('é as duas condiçoes')
 else:
-    print('é menor')
+    print('não é')
 
 # 7*
 
 # Verifique se um número é divisível por 3 ou 5.
 
-divi
+divisivel = int(input('digite um numero>> '))
+
+if divisivel % 3 == 0 and divisivel % 5 == 0:
+    print('o numero é divisivel por 3 e 5')
+else:
+    print('o numero não é divisivel')
