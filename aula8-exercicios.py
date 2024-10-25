@@ -55,12 +55,10 @@ else:
 
 numero = int(input('digite um numero'))
 
-if numero % 5 == 0 or numero % 7 == 0:
+if numero % 5 == 0 and numero % 7 == 0:
     print('é multiplo')
 else: 
     print('Não é')  
-
-
 
 # 6*
 
@@ -79,7 +77,7 @@ else:
 
 divisivel = int(input('digite um numero>> '))
 
-if divisivel % 3 == 0 and divisivel % 5 == 0:
+if divisivel % 3 == 0 or divisivel % 5 == 0:
     print('o numero é divisivel por 3 e 5')
 else:
     print('o numero não é divisivel')
